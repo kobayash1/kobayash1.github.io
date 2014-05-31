@@ -1,0 +1,13 @@
+callback([
+
+  {
+    "text": "Post with Large Feature Image and Text",
+    "href": "blog.chrisbayot.com/2013/readability-feature-post"
+  } ,
+
+  {
+    "text": "Installing Jekyll on Windows",
+    "href": "blog.chrisbayot.com/2013/installing-jekyll-on-windows"
+  } 
+
+])

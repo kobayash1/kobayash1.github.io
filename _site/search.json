@@ -1,0 +1,19 @@
+[
+	
+		{
+		  "title"      : "Installing Jekyll on Windows",
+		  "category"   : "Theme-Setup",
+		  "url"        : "blog.chrisbayot.com/2013/installing-jekyll-on-windows",
+		  "date"       : "2013-12-31 00:00:00 -0600",
+		  "shortdate"  : "December 31, 2013"
+		} ,
+	
+		{
+		  "title"      : "Post with Large Feature Image and Text",
+		  "category"   : "Sample-Posts",
+		  "url"        : "blog.chrisbayot.com/2013/readability-feature-post",
+		  "date"       : "2013-12-30 00:00:00 -0600",
+		  "shortdate"  : "December 30, 2013"
+		} 
+	
+]

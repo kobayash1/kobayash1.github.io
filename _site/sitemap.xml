@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+     
+    <url>
+        <loc>blog.chrisbayot.com/</loc>
+    </url> 
+    <url>
+        <loc>blog.chrisbayot.com/documentation</loc>
+    </url> 
+    <url>
+        <loc>blog.chrisbayot.com/categories</loc>
+    </url> 
+    <url>
+        <loc>blog.chrisbayot.com/tags</loc>
+    </url> 
+    <url>
+        <loc>blog.chrisbayot.com/about</loc>
+    </url>
+    
+    
+    <url>
+        <loc>blog.chrisbayot.com/2013/installing-jekyll-on-windows</loc>
+    </url>
+    
+    <url>
+        <loc>blog.chrisbayot.com/2013/readability-feature-post</loc>
+    </url>
+    
+</urlset>
