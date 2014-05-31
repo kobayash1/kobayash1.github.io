@@ -5,9 +5,6 @@
         <loc>/</loc>
     </url> 
     <url>
-        <loc>/documentation</loc>
-    </url> 
-    <url>
         <loc>/categories</loc>
     </url> 
     <url>
@@ -20,14 +17,6 @@
     
     <url>
         <loc>/2014/first-commit</loc>
-    </url>
-    
-    <url>
-        <loc>/2013/installing-jekyll-on-windows</loc>
-    </url>
-    
-    <url>
-        <loc>/2013/readability-feature-post</loc>
     </url>
     
 </urlset>
