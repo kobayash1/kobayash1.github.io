@@ -2,28 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
      
     <url>
-        <loc>blog.chrisbayot.com/</loc>
+        <loc>/</loc>
     </url> 
     <url>
-        <loc>blog.chrisbayot.com/documentation</loc>
+        <loc>/documentation</loc>
     </url> 
     <url>
-        <loc>blog.chrisbayot.com/categories</loc>
+        <loc>/categories</loc>
     </url> 
     <url>
-        <loc>blog.chrisbayot.com/tags</loc>
+        <loc>/tags</loc>
     </url> 
     <url>
-        <loc>blog.chrisbayot.com/about</loc>
+        <loc>/about</loc>
     </url>
     
     
     <url>
-        <loc>blog.chrisbayot.com/2013/installing-jekyll-on-windows</loc>
+        <loc>/2014/first-commit</loc>
     </url>
     
     <url>
-        <loc>blog.chrisbayot.com/2013/readability-feature-post</loc>
+        <loc>/2013/installing-jekyll-on-windows</loc>
+    </url>
+    
+    <url>
+        <loc>/2013/readability-feature-post</loc>
     </url>
     
 </urlset>
