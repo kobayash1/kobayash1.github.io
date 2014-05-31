@@ -2,21 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
      
     <url>
-        <loc>/</loc>
+        <loc>http://blog.chrisbayot.com/</loc>
     </url> 
     <url>
-        <loc>/categories</loc>
+        <loc>http://blog.chrisbayot.com/categories</loc>
     </url> 
     <url>
-        <loc>/tags</loc>
+        <loc>http://blog.chrisbayot.com/tags</loc>
     </url> 
     <url>
-        <loc>/about</loc>
+        <loc>http://blog.chrisbayot.com/about</loc>
     </url>
     
     
     <url>
-        <loc>/2014/first-commit</loc>
+        <loc>http://blog.chrisbayot.com/2014/first-commit</loc>
     </url>
     
 </urlset>

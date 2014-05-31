@@ -3,7 +3,7 @@
 		{
 		  "title"      : "First Commit",
 		  "category"   : "blog",
-		  "url"        : "/2014/first-commit",
+		  "url"        : "http://blog.chrisbayot.com/2014/first-commit",
 		  "date"       : "2014-05-29 00:00:00 -0500",
 		  "shortdate"  : "May 29, 2014"
 		} 
