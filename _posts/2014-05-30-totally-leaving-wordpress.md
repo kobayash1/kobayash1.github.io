@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Totally Leaving WordPress"
+description: "Hello static site generator!"
 category: blog
 headline: "Jekyll's just better"
 comments: true

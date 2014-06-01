@@ -3,7 +3,7 @@ layout: post
 title: "First Commit"
 description: "Brave new world"
 category: blog 
-headline: This is way cooler than WordPress
+headline: "This is way cooler than WordPress"
 tags: [blog]
 comments: true
 share: true
