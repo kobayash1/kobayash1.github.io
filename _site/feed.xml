@@ -2,31 +2,111 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Chris Bayot</title>
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
-<link rel="self" type="application/atom+xml" href="http://blog.chrisbayot.com/feed.xml" />
-<link rel="alternate" type="text/html" href="http://blog.chrisbayot.com" />
-<updated>2014-05-31T07:57:52-05:00</updated>
-<id>http://blog.chrisbayot.com/</id>
+<link rel="self" type="application/atom+xml" href="/feed.xml" />
+<link rel="alternate" type="text/html" href="" />
+<updated>2014-06-01T00:15:33-05:00</updated>
+<id>/</id>
 <author>
   <name>Chris Bayot</name>
-  <uri>http://blog.chrisbayot.com/</uri>
+  <uri>/</uri>
   <email>c.bay87@gmail.com</email>
 </author>
 
 
 <entry>
+  <title type="html"><![CDATA[New Site! Kinda]]></title>
+  <link>/2014/new-site-kinda</link>
+  <id>/2014/new-site-kinda</id>
+  <published>2014-05-31T00:00:00-05:00</published>
+  <updated>2014-05-31T00:00:00-05:00</updated>
+  <author>
+    <name>Chris Bayot</name>
+    <uri></uri>
+    <email>c.bay87@gmail.com</email>
+  </author>
+  <content type="html">&lt;p&gt;Premise:  I had a WordPress blog on chrisbayot.com, and this freely hosted GitHub Pages jekyll site on blog.chrisbayot.com.  One of them had to go.&lt;/p&gt;
+
+&lt;p&gt;The WordPress had to go.  It’s not as fast nor as secure as the jekyll site.  It was also hosted on a cloud server I had to pay for (albeit really cheap).  The plan of action was simple.  Trash WordPress, and move the jekyll blog to chrisbayot.com.&lt;/p&gt;
+
+&lt;p&gt;Here was the problem:  when using custom domains with static sites hosted on GitHub Pages, they much prefer for them to be subdomains.  This meant I would keep blog.chrisbayot.com, but nothing on chrisbayot.com.  Not wanting that, I got really stubborn and dug some more around the net.&lt;/p&gt;
+
+&lt;p&gt;According to GitHub, static sites hosted by them when using custom subdomains get extra benefits as opposed to those using custom apex domains.  If you use blog.example.com for your GitHub Pages site, your site will get benefits that example.com won’t enjoy.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;We strongly recommend that you use a custom subdomain instead of a custom apex domain for the following three reasons:&lt;/p&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;A custom subdomain gives your GitHub Pages site the benefit of our Content Delivery Network.&lt;/li&gt;
+    &lt;li&gt;A custom subdomain will not be affected by changes in the underlying IP addresses of GitHub’s servers.&lt;/li&gt;
+    &lt;li&gt;A custom subdomain allows pages to load significantly faster than a custom apex domain because its Denial of Service protection can be implemented more efficiently.&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages&quot;&gt;&lt;small&gt;&lt;cite title=&quot;Setting Up a Custom Domain with GitHub Pages&quot;&gt;GitHub&lt;/cite&gt;&lt;/small&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Allow me to quote some of the articles I found on the web that explain everything:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;GitHub Pages with a custom domain is unbelievably slow.&lt;/p&gt;
+
+  &lt;p&gt;When a domain has a DNS A record (pointing to GitHub Pages’ IP), GitHub’s DDoS mitigation technology has no alternative than to make a long redirect.  What I’ve noticed is that sometimes it’s not just a big long redirect but multiple 302 redirects.
+&lt;a href=&quot;http://instantclick.io/github-pages-and-apex-domains&quot;&gt;&lt;small&gt;&lt;cite title=&quot;GitHub Pages and Apex Domains&quot;&gt;InstantClick&lt;/cite&gt;&lt;/small&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;InstantClick’s solution was to simply use the www subdomain, or use CloudFlare as the DNS provider.  Why CloudFlare?&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;[Y]ou can now safely use a CNAME record, as opposed to an A record that points to a fixed IP address, as your root record in CloudFlare DNS without triggering a number of edge case error conditions because you’re violating the DNS spec.&lt;/p&gt;
+
+  &lt;p&gt;What we needed was a way to support a CNAME at the root, but still follow the RFC and return an IP address for any query for the root record. To accomplish this, we extended our authoritative DNS infrastructure to, in certain cases, act as a kind of DNS resolver. What happens is that, if there’s a CNAME at the root, rather than returning that record directly we recurse through the CNAME chain ourselves until we find an A Record. At that point, we return the IP address associated with the A Record. This, effectively, “flattens” the CNAME chain.&lt;/p&gt;
+
+  &lt;p&gt;The biggest benefit is that this allows the flexibility of having CNAMEs at the root without breaking the DNS specification.
+&lt;a href=&quot;http://blog.cloudflare.com/introducing-cname-flattening-rfc-compliant-cnames-at-a-domains-root&quot;&gt;&lt;small&gt;&lt;cite title=&quot;Introducing CNAME Flattening:  RFC-Compliant CNAMEs at a Domain&#39;s Root&quot;&gt;CloudFlare&lt;/cite&gt;&lt;/small&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Without going into too much detail, pointing the GitHub page to an apex domain involves an old process that invokes the aforementioned problems.  CloudFlare created a solution that allows one to point an apex domain to an alias, as opposed to an IP address.  CloudFlare wasn’t the first to offer this kind of service, but they may be the first to do it in a way that doesn’t defy the DNS standards and how DNS works.&lt;/p&gt;
+
+&lt;p&gt;After changing the nameservers on chrisbayot.com from Digital Ocean’s to CloudFlare’s, I created the CNAME record to point the root to kobayash1.github.io.  And now here we are!  My static site hosted on kobayash1.github.io resolves to chrisbayot.com.  The site doesn’t suffer from the redirects that one would expect from a GitHub Pages site pointing to a top level domain.  In fact, it even runs on CloudFlare’s own CDN and gets a lot of their own nifty security features.&lt;/p&gt;
+
+&lt;p&gt;And on top of that, between the services CloudFlare, GitHub, and jekyll provide, all of this is &lt;em&gt;free&lt;/em&gt;.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/2014/new-site-kinda&quot;&gt;New Site! Kinda&lt;/a&gt; was originally published by Chris Bayot at &lt;a href=&quot;&quot;&gt;Chris Bayot&lt;/a&gt; on May 31, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Totally Leaving WordPress]]></title>
+  <link>/2014/totally-leaving-wordpress</link>
+  <id>/2014/totally-leaving-wordpress</id>
+  <published>2014-05-30T00:00:00-05:00</published>
+  <updated>2014-05-30T00:00:00-05:00</updated>
+  <author>
+    <name>Chris Bayot</name>
+    <uri></uri>
+    <email>c.bay87@gmail.com</email>
+  </author>
+  <content type="html">&lt;p&gt;The domain chrisbayot.com currently points to a WordPress installation I have on a &lt;a href=&quot;http://digitalocean.com&quot;&gt;Digital Ocean&lt;/a&gt; cloud server.  It was nice for a few days.  But a friend I follow on Twitter (&lt;a href=&quot;http//twitter.com/dakanya&quot;&gt;@dakanya&lt;/a&gt;) immediately suggested I use a static site generator to do simple blogging.&lt;/p&gt;
+
+&lt;p&gt;A few days and a lot of internet reading later, I have the new blog.chrisbayot.com!  Since this site is hosted on GitHub Pages for free, I no longer have any use for the WordPress blog hosted on a server that I have to pay for.  Soon, blog.chrisbayot.com will become the new chrisbayot.com.  So excited!&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/2014/totally-leaving-wordpress&quot;&gt;Totally Leaving WordPress&lt;/a&gt; was originally published by Chris Bayot at &lt;a href=&quot;&quot;&gt;Chris Bayot&lt;/a&gt; on May 30, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
   <title type="html"><![CDATA[First Commit]]></title>
-  <link>http://blog.chrisbayot.com/2014/first-commit</link>
-  <id>http://blog.chrisbayot.com/2014/first-commit</id>
+  <link>/2014/first-commit</link>
+  <id>/2014/first-commit</id>
   <published>2014-05-29T00:00:00-05:00</published>
   <updated>2014-05-29T00:00:00-05:00</updated>
   <author>
     <name>Chris Bayot</name>
-    <uri>http://blog.chrisbayot.com</uri>
+    <uri></uri>
     <email>c.bay87@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;I don’t know jack about building websites.  So I’m using this!  The site is hosted by GitHub Pages free of charge.  It’s created by &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;jekyll&lt;/a&gt;.  Put simply, jekyll takes text files and performs magic to turn those boring text files into a beautiful website.  Jekyll can take themes, too.  My website is using the “Omega” theme by H.M. Faysal.  He’s a cool dude.  It’s harder to use than a much more common and streamlined blogging content management system, but it also performs faster and has way less security holes.  I think if I use this long enough (a month or two?) I should feel right at home!&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://blog.chrisbayot.com/2014/first-commit&quot;&gt;First Commit&lt;/a&gt; was originally published by Chris Bayot at &lt;a href=&quot;http://blog.chrisbayot.com&quot;&gt;Chris Bayot&lt;/a&gt; on May 29, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;/2014/first-commit&quot;&gt;First Commit&lt;/a&gt; was originally published by Chris Bayot at &lt;a href=&quot;&quot;&gt;Chris Bayot&lt;/a&gt; on May 29, 2014.&lt;/p&gt;</content>
 </entry>
 
 </feed>

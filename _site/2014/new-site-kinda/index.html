@@ -5,22 +5,22 @@ max is a button mashing scrub
 -->
 <head>
 <meta charset="utf-8">
-<title>First Commit &#8211; Chris Bayot</title>
-<meta name="description" content="Brave new world">
-<meta name="keywords" content="blog">
+<title>New Site! Kinda &#8211; Chris Bayot</title>
+<meta name="description" content="No more WordPress">
+<meta name="keywords" content="">
 
 <!-- Twitter Cards -->
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="/images/">
-<meta name="twitter:title" content="First Commit">
-<meta name="twitter:description" content="Brave new world">
+<meta name="twitter:title" content="New Site! Kinda">
+<meta name="twitter:description" content="No more WordPress">
 <meta name="twitter:creator" content="@kobayash1">
 
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="First Commit">
-<meta property="og:description" content="Brave new world">
+<meta property="og:title" content="New Site! Kinda">
+<meta property="og:description" content="No more WordPress">
 <meta property="og:url" content="">
 <meta property="og:site_name" content="Chris Bayot">
 <meta property="og:image" content="/images/double-beaker.jpg">
@@ -29,7 +29,7 @@ max is a button mashing scrub
 
 
 
-<link rel="canonical" href="/2014/first-commit">
+<link rel="canonical" href="/2014/new-site-kinda">
 <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Chris Bayot Feed">
 <link rel="author" href="https://plus.google.com/u/0/108850678971988903083?rel=author">
 
@@ -118,7 +118,7 @@ max is a button mashing scrub
                 
             </a>
             <h2 class="blog-description light bordered bordered-top" itemprop="description">
-                This is way cooler than WordPress
+                Good riddance
             </h2>
         </div>
     </div>
@@ -157,26 +157,64 @@ max is a button mashing scrub
                     <header class="post-header entry-header">
                     
                         
-                        <h1 class="post-title text-center hyper lighter bordered-bottom entry-title" itemprop="headline">First Commit</h1>
+                        <h1 class="post-title text-center hyper lighter bordered-bottom entry-title" itemprop="headline">New Site! Kinda</h1>
                         
-                        <div class="cursive" style="color: #000; font-style:italic;">Brave new world</div>
+                        <div class="cursive" style="color: #000; font-style:italic;">No more WordPress</div>
                         <div class="post-info text-center small">
-                            <span class="entry-date date published updated"><time datetime="2014-05-29T00:00:00-05:00" class="post-time" itemprop="datePublished">29 May 2014</time><span>
-                            in <span class="post-tags"><a href="/categories/index.html#blog" data-toggle="tooltip" title="Other posts from the Blog category" rel="tag">Blog</a></span>&nbsp;<span class="post-tags"><i class="icon-time"></i>&nbsp;1 minute read</span>
+                            <span class="entry-date date published updated"><time datetime="2014-05-31T00:00:00-05:00" class="post-time" itemprop="datePublished">31 May 2014</time><span>
+                            in <span class="post-tags"><a href="/categories/index.html#blog" data-toggle="tooltip" title="Other posts from the Blog category" rel="tag">Blog</a></span>&nbsp;<span class="post-tags"><i class="icon-time"></i>&nbsp;4 minutes read</span>
                         </div>
                     </header>
                     <div class="post-body bordered-bottom" itemprop="description">
                         
-                        <p>I don’t know jack about building websites.  So I’m using this!  The site is hosted by GitHub Pages free of charge.  It’s created by <a href="http://jekyllrb.com/">jekyll</a>.  Put simply, jekyll takes text files and performs magic to turn those boring text files into a beautiful website.  Jekyll can take themes, too.  My website is using the “Omega” theme by H.M. Faysal.  He’s a cool dude.  It’s harder to use than a much more common and streamlined blogging content management system, but it also performs faster and has way less security holes.  I think if I use this long enough (a month or two?) I should feel right at home!</p>
+                        <p>Premise:  I had a WordPress blog on chrisbayot.com, and this freely hosted GitHub Pages jekyll site on blog.chrisbayot.com.  One of them had to go.</p>
+
+<p>The WordPress had to go.  It’s not as fast nor as secure as the jekyll site.  It was also hosted on a cloud server I had to pay for (albeit really cheap).  The plan of action was simple.  Trash WordPress, and move the jekyll blog to chrisbayot.com.</p>
+
+<p>Here was the problem:  when using custom domains with static sites hosted on GitHub Pages, they much prefer for them to be subdomains.  This meant I would keep blog.chrisbayot.com, but nothing on chrisbayot.com.  Not wanting that, I got really stubborn and dug some more around the net.</p>
+
+<p>According to GitHub, static sites hosted by them when using custom subdomains get extra benefits as opposed to those using custom apex domains.  If you use blog.example.com for your GitHub Pages site, your site will get benefits that example.com won’t enjoy.</p>
+
+<blockquote>
+  <p>We strongly recommend that you use a custom subdomain instead of a custom apex domain for the following three reasons:</p>
+
+  <ul>
+    <li>A custom subdomain gives your GitHub Pages site the benefit of our Content Delivery Network.</li>
+    <li>A custom subdomain will not be affected by changes in the underlying IP addresses of GitHub’s servers.</li>
+    <li>A custom subdomain allows pages to load significantly faster than a custom apex domain because its Denial of Service protection can be implemented more efficiently.</li>
+  </ul>
+
+  <p><a href="https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages"><small><cite title="Setting Up a Custom Domain with GitHub Pages">GitHub</cite></small></a></p>
+</blockquote>
+
+<p>Allow me to quote some of the articles I found on the web that explain everything:</p>
+
+<blockquote>
+  <p>GitHub Pages with a custom domain is unbelievably slow.</p>
+
+  <p>When a domain has a DNS A record (pointing to GitHub Pages’ IP), GitHub’s DDoS mitigation technology has no alternative than to make a long redirect.  What I’ve noticed is that sometimes it’s not just a big long redirect but multiple 302 redirects.
+<a href="http://instantclick.io/github-pages-and-apex-domains"><small><cite title="GitHub Pages and Apex Domains">InstantClick</cite></small></a></p>
+</blockquote>
+
+<p>InstantClick’s solution was to simply use the www subdomain, or use CloudFlare as the DNS provider.  Why CloudFlare?</p>
+
+<blockquote>
+  <p>[Y]ou can now safely use a CNAME record, as opposed to an A record that points to a fixed IP address, as your root record in CloudFlare DNS without triggering a number of edge case error conditions because you’re violating the DNS spec.</p>
+
+  <p>What we needed was a way to support a CNAME at the root, but still follow the RFC and return an IP address for any query for the root record. To accomplish this, we extended our authoritative DNS infrastructure to, in certain cases, act as a kind of DNS resolver. What happens is that, if there’s a CNAME at the root, rather than returning that record directly we recurse through the CNAME chain ourselves until we find an A Record. At that point, we return the IP address associated with the A Record. This, effectively, “flattens” the CNAME chain.</p>
+
+  <p>The biggest benefit is that this allows the flexibility of having CNAMEs at the root without breaking the DNS specification.
+<a href="http://blog.cloudflare.com/introducing-cname-flattening-rfc-compliant-cnames-at-a-domains-root"><small><cite title="Introducing CNAME Flattening:  RFC-Compliant CNAMEs at a Domain's Root">CloudFlare</cite></small></a></p>
+</blockquote>
+
+<p>Without going into too much detail, pointing the GitHub page to an apex domain involves an old process that invokes the aforementioned problems.  CloudFlare created a solution that allows one to point an apex domain to an alias, as opposed to an IP address.  CloudFlare wasn’t the first to offer this kind of service, but they may be the first to do it in a way that doesn’t defy the DNS standards and how DNS works.</p>
+
+<p>After changing the nameservers on chrisbayot.com from Digital Ocean’s to CloudFlare’s, I created the CNAME record to point the root to kobayash1.github.io.  And now here we are!  My static site hosted on kobayash1.github.io resolves to chrisbayot.com.  The site doesn’t suffer from the redirects that one would expect from a GitHub Pages site pointing to a top level domain.  In fact, it even runs on CloudFlare’s own CDN and gets a lot of their own nifty security features.</p>
+
+<p>And on top of that, between the services CloudFlare, GitHub, and jekyll provide, all of this is <em>free</em>.</p>
 
                         <br>
                     
-                    
-                    <div class="entry-tags text-center">
-                    
-                        <i class="icon-tags"></i>&nbsp;Tagged with <a href="/tags/index.html#blog" data-toggle="tooltip" title="Posts tagged with blog" rel="tag">blog</a>
-                    
-                    </div>
                     
                     </div>
         </div>
@@ -187,19 +225,19 @@ max is a button mashing scrub
     </p>
     <ul class="social-mini">
         <li>
-            <a href="https://twitter.com/intent/tweet?text=&quot;First Commit&quot;%20/2014/first-commit%20via%20&#64;kobayash1"
+            <a href="https://twitter.com/intent/tweet?text=&quot;New Site! Kinda&quot;%20/2014/new-site-kinda%20via%20&#64;kobayash1"
             onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" data-toggle="tooltip" title="Share on Twitter" itemprop="Twitter">
                 <i class="icon-twitter"></i>
             </a>
         </li>
         <li>
-            <a  href="https://www.facebook.com/sharer/sharer.php?u=/2014/first-commit"
+            <a  href="https://www.facebook.com/sharer/sharer.php?u=/2014/new-site-kinda"
             onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" data-toggle="tooltip" title="Share on Facebook" itemprop="Facebook">
                 <i class="icon-facebook"></i>
             </a>
         </li>
         <li>
-            <a href="https://plus.google.com/share?url=/2014/first-commit"
+            <a href="https://plus.google.com/share?url=/2014/new-site-kinda"
            onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" data-toggle="tooltip" title="Share on Google plus" itemprop="GooglePlus">
                 <i class="icon-google-plus"></i>
             </a>

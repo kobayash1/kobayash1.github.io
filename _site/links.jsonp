@@ -2,7 +2,17 @@ callback([
 
   {
     "text": "First Commit",
-    "href": "http://blog.chrisbayot.com/2014/first-commit"
+    "href": "/2014/first-commit"
+  } ,
+
+  {
+    "text": "Totally Leaving WordPress",
+    "href": "/2014/totally-leaving-wordpress"
+  } ,
+
+  {
+    "text": "New Site! Kinda",
+    "href": "/2014/new-site-kinda"
   } 
 
 ])
