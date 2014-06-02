@@ -13,6 +13,11 @@ callback([
   {
     "text": "New Site! Kinda",
     "href": "/2014/new-site-kinda"
+  } ,
+
+  {
+    "text": "New email and Google Authorship",
+    "href": "/2014/new-email-google-authorship"
   } 
 
 ])
