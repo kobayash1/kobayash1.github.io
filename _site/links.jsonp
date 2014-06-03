@@ -2,22 +2,27 @@ callback([
 
   {
     "text": "First Commit",
-    "href": "/2014/first-commit"
+    "href": "http://chrisbayot.com/2014/first-commit"
   } ,
 
   {
     "text": "Totally Leaving WordPress",
-    "href": "/2014/totally-leaving-wordpress"
+    "href": "http://chrisbayot.com/2014/totally-leaving-wordpress"
   } ,
 
   {
     "text": "New Site! Kinda",
-    "href": "/2014/new-site-kinda"
+    "href": "http://chrisbayot.com/2014/new-site-kinda"
   } ,
 
   {
     "text": "New email and Google Authorship",
-    "href": "/2014/new-email-google-authorship"
+    "href": "http://chrisbayot.com/2014/new-email-google-authorship"
+  } ,
+
+  {
+    "text": "test",
+    "href": "http://chrisbayot.com/2014/test"
   } 
 
 ])

@@ -2,26 +2,48 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Chris Bayot</title>
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
-<link rel="self" type="application/atom+xml" href="/feed.xml" />
-<link rel="alternate" type="text/html" href="" />
-<updated>2014-06-02T17:28:15-05:00</updated>
-<id>/</id>
+<link rel="self" type="application/atom+xml" href="http://chrisbayot.com/feed.xml" />
+<link rel="alternate" type="text/html" href="http://chrisbayot.com" />
+<updated>2014-06-02T17:42:58-05:00</updated>
+<id>http://chrisbayot.com/</id>
 <author>
   <name>Chris Bayot</name>
-  <uri>/</uri>
+  <uri>http://chrisbayot.com/</uri>
   <email>c.bay87@gmail.com</email>
 </author>
 
 
 <entry>
-  <title type="html"><![CDATA[New email and Google Authorship]]></title>
-  <link>/2014/new-email-google-authorship</link>
-  <id>/2014/new-email-google-authorship</id>
+  <title type="html"><![CDATA[test]]></title>
+  <link>http://chrisbayot.com/2014/test</link>
+  <id>http://chrisbayot.com/2014/test</id>
   <published>2014-06-02T00:00:00-05:00</published>
   <updated>2014-06-02T00:00:00-05:00</updated>
   <author>
     <name>Chris Bayot</name>
-    <uri></uri>
+    <uri>http://chrisbayot.com</uri>
+    <email>c.bay87@gmail.com</email>
+  </author>
+  <content type="html">&lt;figure&gt;
+     &lt;a href=&quot;http://chrisbayot.com/images/screenshot.png&quot;&gt; &lt;img src=&quot;http://chrisbayot.com/images/screenshot.png&quot; /&gt;&lt;/a&gt;
+     &lt;figcaption&gt;Now I need to figure out SEO...&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;a href=&quot;[[ site.url }}/images/screenshot.png&quot;&gt;My helpful screenshot&lt;/a&gt;&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://chrisbayot.com/2014/test&quot;&gt;test&lt;/a&gt; was originally published by Chris Bayot at &lt;a href=&quot;http://chrisbayot.com&quot;&gt;Chris Bayot&lt;/a&gt; on June 02, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[New email and Google Authorship]]></title>
+  <link>http://chrisbayot.com/2014/new-email-google-authorship</link>
+  <id>http://chrisbayot.com/2014/new-email-google-authorship</id>
+  <published>2014-06-02T00:00:00-05:00</published>
+  <updated>2014-06-02T00:00:00-05:00</updated>
+  <author>
+    <name>Chris Bayot</name>
+    <uri>http://chrisbayot.com</uri>
     <email>c.bay87@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;Using zoho mail, I’ve finally set up my own personal email address at chris at chrisbayot dot com!  I’ll probably auto-forward all of its incoming messages to my Gmail.  I already set up my Gmail account to be able to send mail as chris at chrisbayot dot com.&lt;/p&gt;
@@ -29,23 +51,23 @@
 &lt;p&gt;I also set up Google Authorship.  Now digging up my blog posts Google should add a by line in the search results.  Kinda like this:&lt;/p&gt;
 
 &lt;figure&gt;
-     &lt;a href=&quot;/images/authorship_example.png&quot;&gt; &lt;img src=&quot;/images/authorship_example.png&quot; /&gt;&lt;/a&gt;
+     &lt;a href=&quot;http://chrisbayot.com/images/authorship_example.png&quot;&gt; &lt;img src=&quot;http://chrisbayot.com/images/authorship_example.png&quot; /&gt;&lt;/a&gt;
      &lt;figcaption&gt;Now I need to figure out SEO...&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-  &lt;p&gt;&lt;a href=&quot;/2014/new-email-google-authorship&quot;&gt;New email and Google Authorship&lt;/a&gt; was originally published by Chris Bayot at &lt;a href=&quot;&quot;&gt;Chris Bayot&lt;/a&gt; on June 02, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://chrisbayot.com/2014/new-email-google-authorship&quot;&gt;New email and Google Authorship&lt;/a&gt; was originally published by Chris Bayot at &lt;a href=&quot;http://chrisbayot.com&quot;&gt;Chris Bayot&lt;/a&gt; on June 02, 2014.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[New Site! Kinda]]></title>
-  <link>/2014/new-site-kinda</link>
-  <id>/2014/new-site-kinda</id>
+  <link>http://chrisbayot.com/2014/new-site-kinda</link>
+  <id>http://chrisbayot.com/2014/new-site-kinda</id>
   <published>2014-05-31T00:00:00-05:00</published>
   <updated>2014-05-31T00:00:00-05:00</updated>
   <author>
     <name>Chris Bayot</name>
-    <uri></uri>
+    <uri>http://chrisbayot.com</uri>
     <email>c.bay87@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;Premise:  I had a WordPress blog on chrisbayot.com, and this freely hosted GitHub Pages jekyll site on blog.chrisbayot.com.  One of them had to go.&lt;/p&gt;
@@ -94,43 +116,43 @@
 
 &lt;p&gt;And on top of that, between the services CloudFlare, GitHub, and jekyll provide, all of this is &lt;em&gt;free&lt;/em&gt;.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;/2014/new-site-kinda&quot;&gt;New Site! Kinda&lt;/a&gt; was originally published by Chris Bayot at &lt;a href=&quot;&quot;&gt;Chris Bayot&lt;/a&gt; on May 31, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://chrisbayot.com/2014/new-site-kinda&quot;&gt;New Site! Kinda&lt;/a&gt; was originally published by Chris Bayot at &lt;a href=&quot;http://chrisbayot.com&quot;&gt;Chris Bayot&lt;/a&gt; on May 31, 2014.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Totally Leaving WordPress]]></title>
-  <link>/2014/totally-leaving-wordpress</link>
-  <id>/2014/totally-leaving-wordpress</id>
+  <link>http://chrisbayot.com/2014/totally-leaving-wordpress</link>
+  <id>http://chrisbayot.com/2014/totally-leaving-wordpress</id>
   <published>2014-05-30T00:00:00-05:00</published>
   <updated>2014-05-30T00:00:00-05:00</updated>
   <author>
     <name>Chris Bayot</name>
-    <uri></uri>
+    <uri>http://chrisbayot.com</uri>
     <email>c.bay87@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;The domain chrisbayot.com currently points to a WordPress installation I have on a &lt;a href=&quot;http://digitalocean.com&quot;&gt;Digital Ocean&lt;/a&gt; cloud server.  It was nice for a few days.  But a friend I follow on Twitter (&lt;a href=&quot;http//twitter.com/dakanya&quot;&gt;@dakanya&lt;/a&gt;) immediately suggested I use a static site generator to do simple blogging.&lt;/p&gt;
 
 &lt;p&gt;A few days and a lot of internet reading later, I have the new blog.chrisbayot.com!  Since this site is hosted on GitHub Pages for free, I no longer have any use for the WordPress blog hosted on a server that I have to pay for.  Soon, blog.chrisbayot.com will become the new chrisbayot.com.  So excited!&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;/2014/totally-leaving-wordpress&quot;&gt;Totally Leaving WordPress&lt;/a&gt; was originally published by Chris Bayot at &lt;a href=&quot;&quot;&gt;Chris Bayot&lt;/a&gt; on May 30, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://chrisbayot.com/2014/totally-leaving-wordpress&quot;&gt;Totally Leaving WordPress&lt;/a&gt; was originally published by Chris Bayot at &lt;a href=&quot;http://chrisbayot.com&quot;&gt;Chris Bayot&lt;/a&gt; on May 30, 2014.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[First Commit]]></title>
-  <link>/2014/first-commit</link>
-  <id>/2014/first-commit</id>
+  <link>http://chrisbayot.com/2014/first-commit</link>
+  <id>http://chrisbayot.com/2014/first-commit</id>
   <published>2014-05-29T00:00:00-05:00</published>
   <updated>2014-05-29T00:00:00-05:00</updated>
   <author>
     <name>Chris Bayot</name>
-    <uri></uri>
+    <uri>http://chrisbayot.com</uri>
     <email>c.bay87@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;I don’t know jack about building websites.  So I’m using this!  The site is hosted by GitHub Pages free of charge.  It’s created by &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;jekyll&lt;/a&gt;.  Put simply, jekyll takes text files and performs magic to turn those boring text files into a beautiful website.  Jekyll can take themes, too.  My website is using the “Omega” theme by H.M. Faysal.  He’s a cool dude.  It’s harder to use than a much more common and streamlined blogging content management system, but it also performs faster and has way less security holes.  I think if I use this long enough (a month or two?) I should feel right at home!&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;/2014/first-commit&quot;&gt;First Commit&lt;/a&gt; was originally published by Chris Bayot at &lt;a href=&quot;&quot;&gt;Chris Bayot&lt;/a&gt; on May 29, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://chrisbayot.com/2014/first-commit&quot;&gt;First Commit&lt;/a&gt; was originally published by Chris Bayot at &lt;a href=&quot;http://chrisbayot.com&quot;&gt;Chris Bayot&lt;/a&gt; on May 29, 2014.&lt;/p&gt;</content>
 </entry>
 
 </feed>
