@@ -5,6 +5,8 @@ description: "No more WordPress"
 category: blog
 headline: "Good riddance"
 comments: true
+share: true
+tags: [blog, wordpress, jekyll, github, cloudflare]
 ---
 Premise:  I had a WordPress blog on chrisbayot.com, and this freely hosted GitHub Pages jekyll site on blog.chrisbayot.com.  One of them had to go.
 

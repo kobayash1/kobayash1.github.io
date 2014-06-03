@@ -5,6 +5,8 @@ description: "Hello static site generator!"
 category: blog
 headline: "Jekyll's just better"
 comments: true
+share: true
+tags: [blog, wordpress, jekyll, github]
 ---
 The domain chrisbayot.com currently points to a WordPress installation I have on a <a href="http://digitalocean.com">Digital Ocean</a> cloud server.  It was nice for a few days.  But a friend I follow on Twitter (<a href="http//twitter.com/dakanya">@dakanya</a>) immediately suggested I use a static site generator to do simple blogging.
 

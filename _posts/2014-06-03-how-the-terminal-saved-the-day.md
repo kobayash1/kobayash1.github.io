@@ -4,6 +4,9 @@ title: "How the Terminal Saved the Day"
 description: "Brute force site design changes"
 headline: "grep da gawd"
 category: blog
+comments: true
+share: true
+tags: [blog, linux, terminal]
 ---
 So, there's that button up in the top left corner that, when clicked, expands the menu.  Currently it says "CB."  It used to say "F."  I'm assuming the "F" stood for the last name of the person who created the current jekyll theme I'm using.  It was annoying me that it said "F."  So I resolved myself to change it.  However, there was a problem.  I didn't know how to do it.
 
