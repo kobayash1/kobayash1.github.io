@@ -3,7 +3,7 @@ layout: post
 title: "Introspective: Writing"
 description: "A desire to improve"
 category: blog
-headline: "writing more than 140 characters is hard" 
+headline: "Writing more than 140 characters is hard" 
 comments: true
 share: true
 tags: [blog, writing]
