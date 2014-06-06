@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Mobile Blogging: The Struggle"
-description: "Searching for a way to push on the go""
+description: "Searching for a way to push on the go"
 category: blog
 headline: "I need an app for this" 
 comments: true
