@@ -2,6 +2,14 @@
 published: false
 ---
 
-## A New Post
-
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+---
+layout: post
+title: "prose.io"
+description: "Publishing new posts to my blog AFK"
+headline: "Yes, this will do"
+category: blog
+tags: [blog, prose.io, mobile]
+share: true
+comments: true
+---
+So I found this new website, [prose.io](http://prose.io).  I think this is a way I can post new stuff to my blog from my phone!
