@@ -7,7 +7,6 @@ comments: true
 headline: "Get Lean Or Die Tryin'"
 share: true
 tags: [blog, fitness, diet]
-published:  false
 ---
 I've been following Jason Blaha's Ice Cream Fitness workout regimen for the past twelve weeks.  The plan asks for three workouts per week.  Over this span of time, I've missed a total of three sessions.  I've progressed in a mostly linear fashion in regards to weight resistance.  Lately I've been stuck on some weights in many of my exercises, but the general trend is still upward.
 
@@ -17,6 +16,6 @@ However, regardless of my progress, I am definitely not finished.  In fact, I do
 
 <figure class="half">
      <a href="{{ site.url }}/images/06-12.jpg"><img src="{{ site.url }}/images/06-12.jpg"></a>
-     <a href="{{ site.url }}/images/09-07.jpg"><img src="{{ site.url }}/images/09-07.jpg"></a>
+     <a href="{{ site.url }}/images/09-07-14.jpg"><img src="{{ site.url }}/images/09-07-14.jpg"></a>
      <figcaption>Left:  Body on June 12; Right:  Body by September 7</figcaption>
 </figure>
