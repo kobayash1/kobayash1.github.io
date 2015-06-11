@@ -14,5 +14,5 @@ The Saturday before that, I was working a night shift.  While I was working, wit
 
 <figure>
      <a href="{{ site.url }}/images/2015/broken_glasses.jpg"><img src="{{ site.url }}/images/2015/broken_glasses.jpg"></a>
-     <figcaption=":(">
+     <figcaption>:(</figcaption>
 </figure>
